@@ -54,7 +54,7 @@ try {
 Write-Host "`n[3/4] Downloading .NET 8 SDK..." -ForegroundColor Cyan
 try {
     # This is the direct download link for the x64 SDK installer
-    $dotNetUrl = "https://download.visualstudio.microsoft.com/download/pr/01518218-46c3-4240-8488-29474b334335/d5a5232749aa5231a316279f64859a03/dotnet-sdk-8.0.303-win-x64.exe"
+    $dotNetUrl = "https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.411/dotnet-sdk-8.0.411-win-x64.exe"
     $dotNetDest = Join-Path -Path $downloadFolder -ChildPath "dotnet-sdk-8.0-win-x64.exe"
     Invoke-WebRequest -Uri $dotNetUrl -OutFile $dotNetDest -ErrorAction Stop
     Write-Host "Successfully downloaded .NET 8 SDK installer." -ForegroundColor Green
